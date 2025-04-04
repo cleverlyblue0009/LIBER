@@ -1,0 +1,159 @@
+/* General Styles */
+.journal-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    min-height: 100vh;
+    background: #1c1c1c;
+    color: white;
+  }
+  
+  /* Header */
+  .journal-header {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Add Entry Button */
+  .add-entry-btn {
+    background-color: white;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  /* Journal Entries */
+  .journal-entries {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  /* Journal Card */
+  .journal-card {
+    background: #333;
+    padding: 15px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    transition: transform 0.2s ease;
+  }
+  
+  .journal-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .journal-date {
+    font-size: 14px;
+    color: gray;
+  }
+  
+  .view-btn, .delete-btn {
+    background-color: rgb(56, 52, 52);
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  margin-right: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  }
+  
+  .view-btn {
+    background-color: black;
+    color: white;
+  }
+  
+  
+  
+  /* Modal (Pop-up) */
+  .journal-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Notebook-Style Modal Content */
+  .journal-modal-content {
+    background: #f5f5f5;
+    padding: 30px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: relative;
+  }
+  
+  /* Ruled Notebook Text Area */
+  .journal-textarea {
+    width: 100%;
+    height: 350px;
+    padding: 15px 50px;
+    border: none;
+    border-radius: 5px;
+    background: repeating-linear-gradient(
+      white, white 25px, 
+      #d3d3d3 26px, #d3d3d3 27px
+    );
+    font-size: 18px;
+    line-height: 26px;
+    font-family: "Dancing Script", cursive;
+    color: black;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+    outline: none;
+    position: relative;
+  }
+  
+  /* Left Notebook Margin (Red Line) */
+  .journal-textarea::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 30px;
+    height: 100%;
+    width: 2px;
+    background-color: red;
+  }
+  
+  /* Save & Close Buttons */
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .save-btn, .close-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .save-btn {
+    background-color: black;
+    color: white;
+  }
+  
+  .close-btn {
+    background-color: gray;
+    color: white;
+  }
+  
